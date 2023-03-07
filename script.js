@@ -66,8 +66,8 @@ sel('.pizzaInfo--qtmenos').addEventListener( 'click', () => {
     }
 } )
 
-selAll('.pizzaInfo--size').forEach( (size, sizeIndex) => {
-    size.addEventListener( 'click', (event) => {
+selAll('.pizzaInfo--size').forEach( (size) => {
+    size.addEventListener( 'click', () => {
         sel('.pizzaInfo--size.selected').classList.remove('selected')
         size.classList.add('selected')
     } )
@@ -82,6 +82,5 @@ sel('.pizzaInfo--addButton').addEventListener( 'click', () => {
         quantidade: modelQtd
     } )
 
-    console.log(card)
     closseModal();
 } )
